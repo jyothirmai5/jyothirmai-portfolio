@@ -17,10 +17,11 @@
 
     @include media(mobile) {
         gap: 3rem;
+        flex-direction: column;
     }
 
-    @include media(mobile, tablet) {
-        flex-direction: column;
+    @include media(tablet) {
+        gap: 5rem;
     }
 }
 
@@ -31,14 +32,35 @@
     position: relative;
 }
 
+.sub-title {
+    font-size: 1.3rem;
+    @extend .font-primary-color;
+
+    @include media(mobile) {
+        font-size: 1rem;
+    }
+}
+
+.profile-img {
+    @include media(tablet) {
+        margin-top: 40px;
+    }
+}
+
 .title {
     margin-bottom: 6px;
     font-family: Space Grotesk, sans-serif;
     font-size: 4rem;
     font-weight: 500;
+    @extend .font-primary-color;
 
-    @include media(tablet, desktop) {
-        margin-bottom: 8px;
+    @include media(mobile) {
+        margin-top: 35px;
+        font-size: 3rem;
+    }
+
+    @include media(tablet) {
+        margin-top: 50px;
     }
 }
 

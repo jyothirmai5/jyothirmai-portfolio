@@ -8,7 +8,7 @@ interface TechStackProps {
 const TechStack: FunctionComponent<TechStackProps> = () => {
     return (
         <div className={styles['tech-stack-div']}>
-            <p className="font-t7 font-primary-color">Tech Stack</p>
+            <p className="font-primary-color">Tech Stack</p>
             <ul className={styles.skills}>
                 <li>
                     <img src="https://skillicons.dev/icons?i=html,css,scss"></img>

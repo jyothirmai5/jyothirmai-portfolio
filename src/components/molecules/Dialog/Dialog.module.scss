@@ -1,4 +1,6 @@
-@import '/src/styles/_fonts.scss';
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
 
 .backdrop {
     position: fixed;
@@ -25,16 +27,38 @@
     z-index: 1000;
 }
 
+.dialog-heading-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 .project-title {
     font-size: 1.65rem;
     font-weight: 700;
     line-height: 1.1;
+    background-clip: text;
+    color: transparent;
+    margin: auto;
+    @extend .bg-link-color;
+
+    @include media(mobile) {
+        font-size: 1rem;
+    }
+}
+
+.project-subtext {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-top: -4px;
+}
+
+.project {
+    margin: auto;
 }
 
 .project-subtitle {
     color: rgba(255, 255, 255, .8);
     align-items: center;
-    font-size: 1rem;
     line-height: 1.1;
 }
 
@@ -46,14 +70,12 @@
     border-radius: 0.5rem;
     flex-direction: column;
     padding: 1.125rem 1.25rem;
-    // display: flex;
-}
+    font-size: 1rem;
 
-.title {
-    background-image: linear-gradient(to right, #2cf8ff, #18ffb0);
-    background-clip: text;
-    color: transparent;
-    @extend .font-t4;
+    @include media(mobile) {
+        padding: 0.9rem 0.85rem;
+        font-size: 0.8rem;
+    }
 }
 
 .lists-container {
@@ -64,4 +86,8 @@
 .list {
     width: 45%;
     padding: 10px;
+
+    @include media(mobile) {
+        width: 100%;
+    }
 }

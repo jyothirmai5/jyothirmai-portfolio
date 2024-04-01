@@ -5,4 +5,8 @@
 .layout {
     @extend .bg-primary-color;
     padding: 7rem 4rem;
+
+    @include media(tablet, mobile) {
+        padding: 3rem 2rem;
+    }
 }

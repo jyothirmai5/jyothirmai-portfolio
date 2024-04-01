@@ -17,16 +17,20 @@ const HeadingSection: React.FC<IHeadingProps> = ({
     subTitle,
     // children,
 }) => {
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+    const isTablet = useMediaQuery({ query: '(max-width: 1023px)' });
+
     return (
         <div className={styles.heading}>
             <div className={styles.heroMain}>
                 <div className={styles.heroText}>
-                    <span className={`font-primary-color ${styles.title}`}>
+                    <span className={styles.title}>
                         {title} &nbsp;
-                        <span><img src={hiEmoji} height={50} /></span>
+                        <span>
+                            <img src={hiEmoji} height={50} />
+                        </span>
                     </span>
-                    <p className="font-t8 font-primary-color">
+                    <p className={styles['sub-title']}>
                         {subTitle} 📍
                     </p>
                     <div className={styles.icons}>
@@ -39,7 +43,7 @@ const HeadingSection: React.FC<IHeadingProps> = ({
 
                     </div>
                 </div>
-                <img src={profilePic} width={isMobile ? 300 : 500} />
+                <img className={styles['profile-img']} src={profilePic} width={isMobile || isTablet ? 250 : 400} />
             </div>
         </div>
     )

@@ -1,3 +1,7 @@
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
+
 .projects-list {
     z-index: 2;
     width: auto;
@@ -23,7 +27,6 @@
 }
 
 .text-style-label {
-    margin-top: 0;
     font-family: Space Grotesk, sans-serif;
     font-size: 7.25rem;
     font-weight: 400;
@@ -32,7 +35,15 @@
     background-clip: text;
     color: transparent;
     text-align: center;
-}
+  
+    @include media(mobile) {
+      font-size: 4.25rem;
+    }
+  
+    @include media(tablet) {
+      font-size: 5.25rem;
+    }
+  }
 
 .spacing-block-large {
     width: 100%;

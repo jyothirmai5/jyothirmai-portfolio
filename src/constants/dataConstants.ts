@@ -63,7 +63,7 @@ export const projects = [
         id: 1,
         name: 'Seven Bird Travel',
         imageUrl: project1,
-        location: 'Associated with Humber College',
+        location: 'Humber College',
         timeline: 'Feb 2024 - Feb 2024',
         skills: ['Angular', 'TypeScript', 'Mapbox', 'Geolocation', 'POI', 'Bootstrap'],
         description: `Seven Bird Travel is a personal project I developed using Angular. This platform enables users to explore various travel destinations effortlessly. Leveraging the Mapbox API, users can search for destinations, accessing detailed location information seamlessly.
@@ -78,7 +78,7 @@ export const projects = [
         id: 2,
         name: 'Studio Seven',
         imageUrl: project2,
-        location: 'Associated with Humber College',
+        location: 'Humber College',
         timeline: 'Nov 2023 - Nov 2023',
         skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
         description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
@@ -92,7 +92,7 @@ export const projects = [
         name: 'EthicalEtix',
         imageUrl: project3,
         timeline: 'Feb 2023 - Jun 2023',
-        location: 'Associated with Aubergine Solutions - Global UX Design and Development Company',
+        location: 'Aubergine Solutions - Global UX Design and Development Company',
         client: 'United States',
         skills: ['React.js', 'Stripe Connect', 'TypeScript', 'Redux', 'scss', 'HTML5', 'Code Review', 'Software Documentation', 'Progress Notes', 'Retrospectives', 'SVG Rendering', 'Stadium View'],
         description: `I led a project where we built a website for buying and selling national sports tickets. We started from scratch, using React with Typescript and following a Scrum framework. We successfully added features like login, buying and selling, stadium map view with seat selection, and secure payments using Stripe Connect.
@@ -106,7 +106,7 @@ export const projects = [
         name: 'ComplyHub',
         timeline: 'Sep 2022 - Jan 2023',
         imageUrl: project4,
-        location: 'Associated with Aubergine Solutions - Global UX Design and Development Company',
+        location: 'Aubergine Solutions - Global UX Design and Development Company',
         client: 'Montreal, Canada',
         skills: ['Angular', 'TypeScript', 'Syncfusion', 'Keycloak', 'angular calendar', 'RxJS'],
         description: `My involvement in the ComplyHub project centered on implementing Keycloak authentication and managing Keycloak files. Additionally, I developed the user interface (UI) for data analytics, incorporating line charts, pie charts, bar graphs, and various graph types using the Syncfusion package within Angular.
@@ -120,7 +120,7 @@ export const projects = [
         name: 'Safeway Driving',
         imageUrl: project5,
         timeline: 'Nov 2021 - Jun 2022',
-        location: 'Associated with AppIt Ventures',
+        location: 'AppIt Ventures',
         client: 'United States',
         skills: ['Angular', 'TypeScript', 'Material-UI', 'RxJS', 'NgRx', 'angular calendar'],
         description: `I contributed to the Safeway Driving website redesign project where we rebuilt the website with improved user interfaces while maintaining the functionalities of the old website. We utilized Angular as the coding framework for development.
@@ -132,7 +132,7 @@ export const projects = [
         name: 'MindMaster',
         timeline: 'Jan 2021 - Feb 2021',
         imageUrl: project6,
-        location: 'Associated with AppIt Ventures',
+        location: 'AppIt Ventures',
         client: 'United States',
         skills: ['Angular', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],
         description: `I contributed to the Mindmaster project by developing the admin portal using Angular and TypeScript. My responsibilities included creating a user-friendly interface for uploading audio affirmations, motivational text, and images. Despite the challenges, I successfully completed the project within a tight deadline of less than two months.
@@ -144,7 +144,7 @@ export const projects = [
         name: 'Secure Builds',
         timeline: 'Apr 2021 - Aug 2021',
         imageUrl: project7,
-        location: 'Associated with AppIt Ventures',
+        location: 'AppIt Ventures',
         client: 'Internal Project',
         skills: ['Angular', 'TypeScript', 'CSS', 'HTML5'],
         description: `I contributed to the Secure Builds project, an internal initiative primarily focused on uploading project builds and ensuring their accessibility to clients. In this project, my role involved developing a system to securely upload project builds and manage permissions effectively. This included ensuring that clients could access the builds they needed.`
@@ -154,7 +154,7 @@ export const projects = [
         name: 'Datum',
         timeline: 'Jun 2020 - Nov 2020',
         imageUrl: project8,
-        location: 'Associated with AppIt Ventures',
+        location: 'AppIt Ventures',
         client: 'United States',
         skills: ['React js', 'Redux', 'Redux saga', 'Fabric js', 'canvas', 'JavaScript', 'stripe'],
         description: `In the Datum project, I played a significant role in developing floor plans using the Fabric.js package and incorporating various user interface features using React, Redux, and Redux Saga. Additionally, I contributed to backend code implementation.

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ProjectProps } from "../../../interfaces";
 import { Dialog, IconButton } from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
+import { useMediaQuery } from "react-responsive";
 
 interface DialogProps {
     project: ProjectProps,
@@ -11,6 +12,8 @@ interface DialogProps {
 }
 
 const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) => {
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
     return (
         <AnimatePresence>
             <Dialog open={true} onClose={closeDialog}
@@ -24,28 +27,28 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                     },
                 }}>
                 <motion.div
-                    style={{ padding: '30px' }}
+                    style={{ padding: isMobile ? '15px' : '30px' }}
                     initial={{ opacity: 0, scale: 0.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <IconButton
-                        edge="end"
-                        color="inherit"
-                        onClick={closeDialog}
-                        aria-label="close"
-                        sx={{
-                            position: 'absolute',
-                            right: 24,
-                            top: 12,
-                        }}
-                    >
-                        <CloseIcon />
-                    </IconButton>
-                    <div className={styles.title}>{project.name}</div>
-                    <p className="font-t13">Project</p>
+                    <div className={styles['dialog-heading-div']}>
+                        <div className={styles.project}><div className={styles['project-title']}>{project.name}
+                        </div>
+                            <p className={styles['project-subtext']}>Project</p>
+                        </div>
+                        <IconButton
+                            edge="end"
+                            color="inherit"
+                            onClick={closeDialog}
+                            aria-label="close"
+                        >
+                            <CloseIcon fontSize={isMobile ? 'small' : 'medium'} />
+                        </IconButton>
+                    </div>
                     <div className={styles['project-desc']}>
-                        <div className={styles['project-subtitle']}>{project.location}</div>
+                        <div className={styles['project-subtitle']}>Associated with
+                            <b> {project.location}</b></div>
                         <p><b>Timeline: </b>{project.timeline}</p>
                         {project?.client && <p><b>Client Location: </b>{project?.client}</p>}
                         <p>
@@ -54,14 +57,15 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                                 <div className={styles["list"]}>
                                     <ul>
                                         {project.skills.map((skill, index) => {
-                                            if (index < Math.ceil(project.skills.length / 2)) {
+                                            let techStackList = isMobile ? project.skills.length : Math.ceil(project.skills.length / 2);
+                                            if (index < techStackList) {
                                                 return <li key={index}>{skill}</li>;
                                             }
                                             return null;
                                         })}
                                     </ul>
                                 </div>
-                                <div className={styles["list"]}>
+                                {!isMobile && <div className={styles["list"]}>
                                     <ul>
                                         {project.skills.map((skill, index) => {
                                             if (index >= Math.ceil(project.skills.length / 2)) {
@@ -70,7 +74,7 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                                             return null;
                                         })}
                                     </ul>
-                                </div>
+                                </div>}
                             </div>
                         </p>
                         <b>Description:</b>

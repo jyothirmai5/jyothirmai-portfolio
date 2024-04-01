@@ -1,11 +1,6 @@
 @use '/src/styles/mixins.scss' as *;
-@import '/src/styles/variables.scss';
-@import '/src/styles/_fonts.scss';
-
-.button-div {
-    display: flex;
-    gap: 40px;
-}
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/colors.scss' as *;
 
 .header-root {
     flex-grow: 1;
@@ -16,26 +11,6 @@
     top: 0;
     width: 100%;
     z-index: 200;
-}
-
-.title {
-    flex-grow: 1;
-}
-
-.logo {
-    margin-right: 24px;
-
-    @include desktop {
-        margin-right: 46px;
-    }
-
-    img {
-        height: 32px;
-
-        @include media(tablet, desktop) {
-            height: 40px;
-        }
-    }
 }
 
 .app-bar {
@@ -80,77 +55,11 @@
     margin: auto 0px;
 }
 
-.sell-a-ticket-button {
-    padding: 10px 30px;
-
-    @media screen and (min-width: $grid-breakpoints-md) and (max-width: 1280px) {
-        padding: 10px 5px 10px 20px;
-    }
-
-    button {
-        color: $font-primary-color !important;
-        background-color: $font-button-color !important;
-    }
-}
-
 // Styles for the mobile devices
 .mobile-header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-}
-
-
-.mobile-icons {
-    display: flex;
-
-    .search-icon {
-        margin-right: 12px;
-        padding-top: 0px;
-
-        @include media(tablet, desktop) {
-            padding-top: 6px;
-            align-items: baseline;
-        }
-    }
-}
-
-.notification-icon {
-    height: 16px;
-    width: 16px;
-    padding-top: 10px !important;
-    margin: 5px 18px 5px 0px !important;
-}
-
-.navigation-modal {
-    background-color: $bg-primary-color;
-    padding: 45px 32px;
-    height: -webkit-fill-available;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 22px;
-    }
-
-    .modal-logo {
-        width: 82px;
-        height: 26px;
-    }
-
-    .close-icon {
-        height: 24px;
-        color: $bg-panels-cards-color;
-    }
-
-    .navigation-links {
-        display: flex;
-        flex-direction: column;
-
-        button {
-            margin-top: 46px;
-        }
-    }
 }
 
 .home-header-gradient {
@@ -166,10 +75,14 @@
     bottom: auto;
     left: -13%;
     right: auto;
+
+    @include media(tablet) {
+        width: 15rem;
+    }
 }
 
 .home-header-right-gradient {
-    z-index: 5;
+    z-index: 1;
     width: 20rem;
     height: 20rem;
     background-color: #2cf8ff;
@@ -181,4 +94,13 @@
     bottom: auto;
     right: -13%;
     left: auto;
+
+    @include media(mobile) {
+        width: 9rem;
+        height: 40rem;
+    }
+
+    @include media(tablet) {
+        width: 15rem;
+    }
 }

@@ -1,5 +1,4 @@
 @use 'src/styles/variables' as *;
-@use 'src/styles/fonts' as *;
 @use 'src/styles/colors' as *;
 @use '/src/styles/mixins.scss' as *;
 
@@ -34,13 +33,12 @@
         display: inline-flex;
         margin-bottom: 24px;
         margin-right: 32px;
-        @extend .font-t9;
-        @extend .font-button-color;
+        @extend .font-primary-color;
 
         &:hover {
             text-decoration: underline;
             padding-bottom: 2px;
-            color: $font-button-color;
+            color: $font-primary-color;
         }
     }
 
@@ -55,8 +53,7 @@
     a {
         margin-left: 16px;
         text-decoration: underline;
-        @extend .font-t13;
-        @extend .font-button-color;
+        @extend .font-primary-color;
     }
 }
 
@@ -76,7 +73,7 @@
         }
 
         &:hover {
-            background-color: $bg-panels-cards-color;
+            background-color: $font-primary-color;
             border-radius: 50%;
         }
     }
@@ -92,7 +89,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 3rem;
-    border-top: 1px solid $outline-button-color;
+    border-top: 1px solid $font-primary-color;
     text-align: center;
 
     @include media(tablet, desktop) {

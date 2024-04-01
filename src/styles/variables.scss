@@ -3,92 +3,15 @@
 // * #####################
 
 //* Background colors
-$bg-tooltip-color: #0c0618;
-$bg-modal-color: #484c54;
-$bg-disabled-color: #c0c4ce;
-$bg-icon-color: #dfe1e7;
-$bg-table-header-color: #eaecef;
-$bg-nav-color: #f3f5f6;
-$bg-main-color: #f9fafa;
-$bg-panels-cards-color: #ffffff;
 $bg-primary-color: #000000;
-$bg-hover-color: #3c4049;
-$bg-pressed-color: #2d3039;
-$bg-selected-color: #ddf4f8;
-$bg-danger-color: #cf1322;
-$bg-danger-hover-color: #ff4d4f;
-$bg-danger-pressed-color: #8a0d17;
-$bg-danger-selected-color: #fff1f0;
-$bg-card-stroke-color: #657dfe;
-$bg-light-color: #feeeeb;
-$bg-dark-color: #fe5d39;
-$bg-box-dark-color: #1a171a;
+$bg-secondary-color: #242424;
+$bg-gradient-color: linear-gradient(to right, #2cf8ff, #18ffb0);
+$bg-border-color: #dfe1e7;
 
 //* Font colors
-$font-title-color: #3c4049;
-$font-body-color: #656c7b;
-$font-help-color: #989fae;
-$font-disabled-color: #aeb4c1;
-$font-secondary-disabled-color: #c0c4ce;
-$font-button-color: #ffffff;
 $font-primary-color: #ffffff;
-$font-hover-color: #3c4049;
-$font-pressed-color: #2d3039;
-$font-selected-color: #ddf4f8;
-$font-danger-color: #cf1322;
-$font-danger-hover-color: #ff4d4f;
-$font-danger-pressed-color: #8a0d17;
-$font-danger-selected-color: #fff1f0;
-$font-card-stroke-color: #657dfe;
-$font-light-color: #feeeeb;
-$font-dark-color: #fe5d39;
-$font-link-color: #4965fe;
-$font-input-color: #131b26;
-
-//* Icon colors
-$icon-primary-selected-color: #ddf4f8;
-$icon-secondary-color: #989fae;
-$icon-secondary-hover-color: #3c4049;
-$icon-secondary-disabled-color: #c0c4ce;
-$icon-button-color: #ffffff;
-$icon-danger-color: #cf1322;
-$icon-danger-hover-color: #ff4d4f;
-$icon-danger-pressed-color: #8a0d17;
-$icon-dark-color: #fe5d39;
-$icon-light-color: #feeeeb;
-
-//* Outline colors
-$outline-primary-pressed-color: rgba(255, 255, 255, .1);
-$outline-secondary-color: #656c7b;
-$outline-secondary-hover-color: #3c4049;
-$outline-secondary-disabled-color: #c0c4ce;
-$outline-seperator-color: #dfe1e7;
-$outline-button-color: #ffffff;
-$outline-card-color: #657dfe;
-$outline-danger-color: #cf1322;
-$outline-danger-hover-color: #ff4d4f;
-$outline-danger-pressed-color: #8a0d17;
-$outline-dark-color: #fe5d39;
-
-//* Semantic colors
-$success-font-color: #458901;
-$info-font-color: #1d56c8;
-$alert-font-color: #e69905;
-$error-font-color: #cb0e0e;
-
-$success-bg-color: #f4f8f1;
-$info-bg-color: #edf2fc;
-$alert-bg-color: #fef4e1;
-$error-bg-color: #fbeeee;
-
-$success-outline-color: #cce0b8;
-$info-outline-color: #cad9f7;
-$alert-outline-color: #f6ddad;
-$error-outline-color: #fbcbcb;
-
-// Stadium colors
-$stadium-section-color: #A4B2FE;
-
+$font-blue-color: #2cf8ff;
+$font-green-color: #18ffb0;
 
 // * ######################
 // * Font variables
@@ -96,31 +19,6 @@ $stadium-section-color: #A4B2FE;
 
 //* Font family
 $font-family-inter: Inter;
-
-//* Font sizes
-$font-size-base: 1rem;
-$font-size-5xs: $font-size-base * 0.625;
-$font-size-4xs: $font-size-base * 0.6875;
-$font-size-3xs: $font-size-base * 0.75;
-$font-size-2xs: $font-size-base * 0.8125;
-$font-size-xs: $font-size-base * 0.875;
-$font-size-sm: $font-size-base * 1;
-$font-size-md: $font-size-base * 1.125;
-$font-size-2md: $font-size-base * 1.25;
-$font-size-3md: $font-size-base * 1.5;
-$font-size-4md: $font-size-base * 1.75;
-$font-size-lg: $font-size-base * 2;
-$font-size-2lg: $font-size-base * 2.5;
-$font-size-xl: $font-size-base * 3;
-$font-size-2xl: $font-size-base * 3.25;
-$font-size-3xl: $font-size-base * 3.75;
-
-//* Font weights
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-
-//* Font letter-spacing
-$font-letter-spacing: 0.2px;
 
 $grid-breakpoints-sm: 768px;
 $grid-breakpoints-md: 1024px;

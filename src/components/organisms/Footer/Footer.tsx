@@ -18,11 +18,11 @@ const Footer: React.FC<any> = () => {
 
                 </Grid>
                 <div className="footer-seperator">
-                    <p className="font-t7 font-button-color">
+                    <p className="font-button-color">
                         Copyright ©2024
                     </p>
                     <div>
-                        <p className="font-t7 font-button-color">
+                        <p className="font-button-color">
                             All Rights Reserved
                         </p>
                     </div>

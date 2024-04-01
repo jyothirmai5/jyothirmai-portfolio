@@ -1,3 +1,7 @@
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
+
 .home-about_line-wrapper {
     width: 1px;
     background-color: rgba(255, 255, 255, .15);
@@ -14,13 +18,12 @@
     align-items: stretch;
     display: flex;
 
-    @media screen and (max-width: 768px) {
-        grid-column-gap: 3rem;
-        // padding-left: 2.9rem;
+    @include media(mobile) {
+        grid-column-gap: 2rem;
     }
 
-    @media screen and (max-width: 1024px) {
-        grid-column-gap: 3.9rem;
+    @include media(tablet) {
+        grid-column-gap: 2.9rem;
     }
 }
 
@@ -52,6 +55,14 @@
     background-clip: text;
     color: transparent;
     text-align: center;
+
+    @include media(mobile) {
+        font-size: 4.25rem;
+    }
+
+    @include media(tablet) {
+        font-size: 5.25rem;
+    }
 }
 
 .about-list-wrapper {

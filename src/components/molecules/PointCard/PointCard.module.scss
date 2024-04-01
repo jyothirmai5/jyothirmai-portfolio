@@ -1,4 +1,6 @@
-@import '/src/styles/_fonts.scss';
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
 
 .point-div {
     grid-column-gap: 1.5rem;
@@ -13,6 +15,10 @@
     border: 1px solid rgba(255, 255, 255, .1);
     border-radius: 0.25rem;
     height: 100%;
+
+    @include media(mobile) {
+        font-size: 1.1rem;
+    }
 }
 
 .title {
@@ -26,6 +32,10 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
     padding: 0px 20px 20px;
+
+    @include media(mobile) {
+        font-size: 0.8rem;
+    }
 }
 
 .each-point-box {

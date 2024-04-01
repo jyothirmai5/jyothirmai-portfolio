@@ -1,11 +1,13 @@
 @use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
 
 .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     list-style: none;
-    border-left: 1px solid $bg-icon-color;
+    border-left: 1px solid $bg-border-color;
 }
 
 .tech-stack-div {
@@ -15,5 +17,11 @@
 
     p {
         margin: auto 10px;
+    }
+
+    @include media(mobile, tablet) {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
     }
 }

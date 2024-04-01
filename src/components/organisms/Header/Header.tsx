@@ -50,7 +50,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
 
     return (
         <div className={styles['header-root']}>
-            <div className={styles['home-header-gradient']}></div>
+            {isDesktopOrTablet && <div className={styles['home-header-gradient']}></div>}
             <AppBar position="static" className={styles['app-bar']}>
                 <Toolbar className={styles['header-toolbar']}>
                     {/* Add logo */}
@@ -68,7 +68,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     }
                 </Toolbar>
             </AppBar>
-            {isDesktopOrTablet && <div className={styles['home-header-right-gradient']}></div>}
+            <div className={styles['home-header-right-gradient']}></div>
         </div >
     );
 }
