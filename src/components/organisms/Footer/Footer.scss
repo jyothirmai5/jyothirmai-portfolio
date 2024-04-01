@@ -1,0 +1,106 @@
+@use 'src/styles/variables' as *;
+@use 'src/styles/fonts' as *;
+@use 'src/styles/colors' as *;
+@use '/src/styles/mixins.scss' as *;
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    @extend .bg-primary-color;
+}
+
+.footer-title {
+    padding: 60px 0px;
+
+    .footer-logo {
+        margin-bottom: 24px;
+    }
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include media(tablet, desktop) {
+        flex-direction: row;
+    }
+}
+
+#static-pages {
+    display: inline-grid;
+
+    a {
+        display: inline-flex;
+        margin-bottom: 24px;
+        margin-right: 32px;
+        @extend .font-t9;
+        @extend .font-button-color;
+
+        &:hover {
+            text-decoration: underline;
+            padding-bottom: 2px;
+            color: $font-button-color;
+        }
+    }
+
+    @include media(tablet, desktop) {
+        display: block;
+    }
+}
+
+#legal-pages {
+    margin: auto 0px;
+
+    a {
+        margin-left: 16px;
+        text-decoration: underline;
+        @extend .font-t13;
+        @extend .font-button-color;
+    }
+}
+
+.media-logos {
+    display: flex;
+    flex-direction: row;
+
+    a {
+        display: block;
+        height: 28px;
+        margin-left: 0px;
+        margin-right: 25px;
+
+        @include media(tablet, desktop) {
+            margin-right: 0px;
+            margin-left: 8px;
+        }
+
+        &:hover {
+            background-color: $bg-panels-cards-color;
+            border-radius: 50%;
+        }
+    }
+
+    img:hover {
+        filter: invert(1);
+    }
+}
+
+.footer-seperator {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem;
+    border-top: 1px solid $outline-button-color;
+    text-align: center;
+
+    @include media(tablet, desktop) {
+        flex-direction: row;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+}

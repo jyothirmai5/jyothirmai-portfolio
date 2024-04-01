@@ -1,0 +1,54 @@
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+@use '/src/styles/colors.scss' as *;
+
+.heading {
+    p {
+        margin-top: 8px;
+    }
+}
+
+.heroMain {
+    align-items: center;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    position: relative;
+
+    @include media(mobile) {
+        gap: 3rem;
+    }
+
+    @include media(mobile, tablet) {
+        flex-direction: column;
+    }
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 6px;
+    font-family: Space Grotesk, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+
+    @include media(tablet, desktop) {
+        margin-bottom: 8px;
+    }
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+
+    .icon {
+        &:hover {
+            color: #2cf8ff;
+        }
+    }
+}

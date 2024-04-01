@@ -1,0 +1,43 @@
+.project-card {
+    width: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    background-color: rgba(204, 220, 255, .12);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0.75rem;
+    flex-direction: column;
+    padding: 1rem;
+    display: flex;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.project-title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.project-subtitle {
+    color: rgba(255, 255, 255, .8);
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
+.project-desc {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 0.5rem;
+    flex-direction: column;
+    padding: 1.125rem 1.25rem;
+    display: flex;
+}

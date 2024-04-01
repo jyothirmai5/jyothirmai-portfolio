@@ -1,0 +1,18 @@
+@import './styles/variables.scss';
+
+.App {
+    text-align: center;
+    min-height: 100vh;
+}
+
+:export {
+    interFont: $font-family-inter;
+    colorPrimary: $font-title-color;
+    colorSecondary: $bg-card-stroke-color;
+    colorSecondaryContrast: $font-link-color;
+    colorDanger: $error-font-color;
+    colorPrimaryLight: $bg-nav-color;
+    colorPrimaryDark: $bg-primary-color;
+    colorSecondaryLight: $bg-panels-cards-color;
+    colorSecondaryIcon: $icon-secondary-color;
+}

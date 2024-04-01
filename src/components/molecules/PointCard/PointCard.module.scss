@@ -1,0 +1,50 @@
+@import '/src/styles/_fonts.scss';
+
+.point-div {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+    align-items: flex-start;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1e2a;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 0.25rem;
+    height: 100%;
+}
+
+.title {
+    background-image: linear-gradient(to right, #2cf8ff, #18ffb0);
+    background-clip: text;
+    color: transparent;
+}
+
+.description {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    padding: 0px 20px 20px;
+}
+
+.each-point-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #1c1e2a;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 0.25rem;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.125rem;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.point-title {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}

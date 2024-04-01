@@ -1,0 +1,23 @@
+.icon-color {
+    color: #2cf8ff
+}
+
+.selected-link {
+    background-image: linear-gradient(to right, #2cf8ff, #18ffb0);
+    background-clip: text;
+    color: transparent !important;
+}
+
+.each-link {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 40px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: .125rem;
+
+    &:hover {
+        @extend .selected-link;
+    }
+}

@@ -1,0 +1,149 @@
+@use 'mixins' as *;
+@use 'variables' as var;
+
+// *********** Font classes *********** //
+
+%font-t1 {
+    @include inter-40-regular;
+
+    @include media(tablet, desktop) {
+        @include inter-60-regular;
+    }
+}
+
+%font-t2 {
+    @include inter-32-bold;
+
+    @include media(tablet, desktop) {
+        @include inter-52-bold;
+    }
+}
+
+%font-t3 {
+    @include inter-32-bold;
+
+    @include media(tablet, desktop) {
+        @include inter-48-bold;
+    }
+}
+
+%font-t4 {
+    @include inter-28-bold;
+
+    @include media(tablet, desktop) {
+        @include inter-32-bold;
+    }
+}
+
+%font-t5 {
+    @include inter-24-bold;
+}
+
+%font-t6 {
+    @include inter-18-regular;
+}
+
+%font-t7 {
+    @include inter-16-bold;
+}
+
+%font-t8 {
+    @include inter-16-regular;
+}
+
+%font-t9 {
+    @include inter-14-bold;
+}
+
+%font-t10 {
+    @include inter-14-regular;
+}
+
+%font-t11 {
+    @include inter-13-regular;
+}
+
+%font-t12 {
+    @include inter-12-bold;
+}
+
+%font-t13 {
+    @include inter-12-regular;
+}
+
+%font-t14 {
+    @include inter-11-regular;
+}
+
+%font-t15 {
+    @include inter-10-bold;
+}
+
+%font-t16 {
+    @include inter-20-bold;
+}
+
+
+.font-t1 {
+    @extend %font-t1;
+}
+
+.font-t2 {
+    @extend %font-t2;
+}
+
+.font-t3 {
+    @extend %font-t3;
+}
+
+.font-t4 {
+    @extend %font-t4;
+}
+
+.font-t5 {
+    @extend %font-t5;
+}
+
+.font-t6 {
+    @extend %font-t6;
+}
+
+.font-t7 {
+    @extend %font-t7;
+}
+
+.font-t8 {
+    @extend %font-t8;
+}
+
+.font-t9 {
+    @extend %font-t9;
+}
+
+.font-t10 {
+    @extend %font-t10;
+}
+
+.font-t11 {
+    @extend %font-t11;
+}
+
+.font-t12 {
+    @extend %font-t12;
+}
+
+.font-t13 {
+    @extend %font-t13;
+}
+
+.font-t14 {
+    @extend %font-t14;
+}
+
+.font-t15 {
+    @extend %font-t15;
+}
+
+.font-t16 {
+    @extend %font-t16;
+}

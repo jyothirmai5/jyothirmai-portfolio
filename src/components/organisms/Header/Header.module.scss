@@ -1,0 +1,184 @@
+@use '/src/styles/mixins.scss' as *;
+@import '/src/styles/variables.scss';
+@import '/src/styles/_fonts.scss';
+
+.button-div {
+    display: flex;
+    gap: 40px;
+}
+
+.header-root {
+    flex-grow: 1;
+    background-color: $bg-primary-color;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.logo {
+    margin-right: 24px;
+
+    @include desktop {
+        margin-right: 46px;
+    }
+
+    img {
+        height: 32px;
+
+        @include media(tablet, desktop) {
+            height: 40px;
+        }
+    }
+}
+
+.app-bar {
+    background-color: $bg-primary-color !important;
+    padding: 20px 24px;
+    height: 72px;
+    box-shadow: 0 0 20px 5px rgba(60, 60, 60, 0.5) !important;
+
+    @media (max-width: $grid-breakpoints-sm) {
+        padding: 0px 24px;
+    }
+}
+
+.header-toolbar {
+    padding: 0 !important;
+}
+
+.profile-div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.profile-name {
+    cursor: pointer;
+}
+
+.icon-size {
+    align-items: center !important;
+    margin: 5px 10px !important;
+    width: 20px;
+    height: 20px;
+
+    @include media(tablet, desktop) {
+        margin: 10px !important;
+    }
+}
+
+.flex-div {
+    display: flex;
+    margin: auto 0px;
+}
+
+.sell-a-ticket-button {
+    padding: 10px 30px;
+
+    @media screen and (min-width: $grid-breakpoints-md) and (max-width: 1280px) {
+        padding: 10px 5px 10px 20px;
+    }
+
+    button {
+        color: $font-primary-color !important;
+        background-color: $font-button-color !important;
+    }
+}
+
+// Styles for the mobile devices
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.mobile-icons {
+    display: flex;
+
+    .search-icon {
+        margin-right: 12px;
+        padding-top: 0px;
+
+        @include media(tablet, desktop) {
+            padding-top: 6px;
+            align-items: baseline;
+        }
+    }
+}
+
+.notification-icon {
+    height: 16px;
+    width: 16px;
+    padding-top: 10px !important;
+    margin: 5px 18px 5px 0px !important;
+}
+
+.navigation-modal {
+    background-color: $bg-primary-color;
+    padding: 45px 32px;
+    height: -webkit-fill-available;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+
+    .modal-logo {
+        width: 82px;
+        height: 26px;
+    }
+
+    .close-icon {
+        height: 24px;
+        color: $bg-panels-cards-color;
+    }
+
+    .navigation-links {
+        display: flex;
+        flex-direction: column;
+
+        button {
+            margin-top: 46px;
+        }
+    }
+}
+
+.home-header-gradient {
+    z-index: 5;
+    width: 20rem;
+    height: 20rem;
+    background-color: #2cf8ff;
+    filter: blur(200px);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -8%;
+    bottom: auto;
+    left: -13%;
+    right: auto;
+}
+
+.home-header-right-gradient {
+    z-index: 5;
+    width: 20rem;
+    height: 20rem;
+    background-color: #2cf8ff;
+    filter: blur(200px);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: -8%;
+    bottom: auto;
+    right: -13%;
+    left: auto;
+}

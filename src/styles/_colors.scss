@@ -1,0 +1,582 @@
+@use 'variables' as *;
+
+// *********** Background classes *********** //
+
+%bg-tooltip-color {
+    background-color: $bg-tooltip-color;
+}
+
+%bg-modal-color {
+    background-color: $bg-modal-color;
+}
+
+%bg-disabled-color {
+    background-color: $bg-disabled-color;
+}
+
+%bg-icon-color {
+    background-color: $bg-icon-color;
+}
+
+%bg-table-header-color {
+    background-color: $bg-table-header-color;
+}
+
+%bg-nav-color {
+    background-color: $bg-nav-color;
+}
+
+%bg-main-color {
+    background-color: $bg-main-color;
+}
+
+%bg-panels-cards-color {
+    background-color: $bg-panels-cards-color;
+}
+
+%bg-primary-color {
+    background-color: $bg-primary-color;
+}
+
+%bg-box-dark-color {
+    background-color: $bg-box-dark-color;
+}
+
+%bg-hover-color {
+    background-color: $bg-hover-color;
+}
+
+%bg-pressed-color {
+    background-color: $bg-pressed-color;
+}
+
+%bg-selected-color {
+    background-color: $bg-selected-color;
+}
+
+%bg-danger-color {
+    background-color: $bg-danger-color;
+}
+
+%bg-danger-hover-color {
+    background-color: $bg-danger-hover-color;
+}
+
+%bg-danger-pressed-color {
+    background-color: $bg-danger-pressed-color;
+}
+
+%bg-danger-selected-color {
+    background-color: $bg-danger-selected-color;
+}
+
+%bg-card-stroke-color {
+    background-color: $bg-card-stroke-color;
+}
+
+%bg-light-color {
+    background-color: $bg-light-color;
+}
+
+%bg-dark-color {
+    background-color: $bg-dark-color;
+}
+
+.bg-tooltip-color {
+    @extend %bg-tooltip-color;
+}
+
+.bg-modal-color {
+    @extend %bg-modal-color;
+}
+
+.bg-disabled-color {
+    @extend %bg-disabled-color;
+}
+
+.bg-icon-color {
+    @extend %bg-icon-color;
+}
+
+.bg-table-header-color {
+    @extend %bg-table-header-color;
+}
+
+.bg-nav-color {
+    @extend %bg-nav-color;
+}
+
+.bg-main-color {
+    @extend %bg-main-color;
+}
+
+.bg-panels-cards-color {
+    @extend %bg-panels-cards-color;
+}
+
+.bg-primary-color {
+    @extend %bg-primary-color;
+}
+
+.bg-box-dark-color {
+    @extend %bg-box-dark-color;
+}
+
+.bg-hover-color {
+    @extend %bg-hover-color;
+}
+
+.bg-pressed-color {
+    @extend %bg-pressed-color;
+}
+
+.bg-selected-color {
+    @extend %bg-selected-color;
+}
+
+.bg-danger-color {
+    @extend %bg-danger-color;
+}
+
+.bg-danger-hover-color {
+    @extend %bg-danger-hover-color;
+}
+
+.bg-danger-pressed-color {
+    @extend %bg-danger-pressed-color;
+}
+
+.bg-danger-selected-color {
+    @extend %bg-danger-selected-color;
+}
+
+.bg-card-stroke-color {
+    @extend %bg-card-stroke-color;
+}
+
+.bg-light-color {
+    @extend %bg-light-color;
+}
+
+.bg-dark-color {
+    @extend %bg-dark-color;
+}
+
+// *********** Font color classes *********** //
+
+%font-title-color {
+    color: $font-title-color;
+}
+
+%font-body-color {
+    color: $font-body-color;
+}
+
+%font-help-color {
+    color: $font-help-color;
+}
+
+%font-disabled-color {
+    color: $font-disabled-color;
+}
+
+%font-secondary-disabled-color {
+    color: $font-secondary-disabled-color;
+}
+
+%font-button-color {
+    color: $font-button-color;
+}
+
+%font-primary-color {
+    color: $font-primary-color;
+}
+
+%font-hover-color {
+    color: $font-hover-color;
+}
+
+%font-pressed-color {
+    color: $font-pressed-color;
+}
+
+%font-selected-color {
+    color: $font-selected-color;
+}
+
+%font-danger-color {
+    color: $font-danger-color;
+}
+
+%font-danger-hover-color {
+    color: $font-danger-hover-color;
+}
+
+%font-danger-pressed-color {
+    color: $font-danger-pressed-color;
+}
+
+%font-danger-selected-color {
+    color: $font-danger-selected-color;
+}
+
+%font-card-stroke-color {
+    color: $font-card-stroke-color;
+}
+
+%font-light-color {
+    color: $font-light-color;
+}
+
+%font-dark-color {
+    color: $font-dark-color;
+}
+
+%font-input-color {
+    color: $font-input-color;
+}
+
+.font-title-color {
+    @extend %font-title-color;
+}
+
+.font-body-color {
+    @extend %font-body-color;
+}
+
+.font-help-color {
+    @extend %font-help-color;
+}
+
+.font-disabled-color {
+    @extend %font-disabled-color;
+}
+
+.font-secondary-disabled-color {
+    @extend %font-secondary-disabled-color;
+}
+
+.font-button-color {
+    @extend %font-button-color;
+}
+
+.font-primary-color {
+    @extend %font-primary-color;
+}
+
+.font-hover-color {
+    @extend %font-hover-color;
+}
+
+.font-pressed-color {
+    @extend %font-pressed-color;
+}
+
+.font-selected-color {
+    @extend %font-selected-color;
+}
+
+.font-danger-color {
+    @extend %font-danger-color;
+}
+
+.font-danger-hover-color {
+    @extend %font-danger-hover-color;
+}
+
+.font-danger-pressed-color {
+    @extend %font-danger-pressed-color;
+}
+
+.font-danger-selected-color {
+    @extend %font-danger-selected-color;
+}
+
+.font-card-stroke-color {
+    @extend %font-card-stroke-color;
+}
+
+.font-light-color {
+    @extend %font-light-color;
+}
+
+.font-dark-color {
+    @extend %font-dark-color;
+}
+
+.font-input-color {
+    @extend %font-input-color;
+}
+
+// *********** Icon classes *********** //
+
+%icon-primary-selected-color {
+    background-color: $icon-primary-selected-color;
+}
+
+%icon-secondary-color {
+    background-color: $icon-secondary-color;
+}
+
+%icon-secondary-hover-color {
+    background-color: $icon-secondary-hover-color;
+}
+
+%icon-secondary-disabled-color {
+    background-color: $icon-secondary-disabled-color;
+}
+
+%icon-button-color {
+    background-color: $icon-button-color;
+}
+
+%icon-danger-color {
+    background-color: $icon-danger-color;
+}
+
+%icon-danger-hover-color {
+    background-color: $icon-danger-hover-color;
+}
+
+%icon-danger-pressed-color {
+    background-color: $icon-danger-pressed-color;
+}
+
+%icon-dark-color {
+    background-color: $icon-dark-color;
+}
+
+%icon-light-color {
+    background-color: $icon-light-color;
+}
+
+.icon-primary-selected-color {
+    @extend %icon-primary-selected-color;
+}
+
+.icon-secondary-color {
+    @extend %icon-secondary-color;
+}
+
+.icon-secondary-hover-color {
+    @extend %icon-secondary-hover-color;
+}
+
+.icon-secondary-disabled-color {
+    @extend %icon-secondary-disabled-color;
+}
+
+.icon-button-color {
+    @extend %icon-button-color;
+}
+
+.icon-danger-color {
+    @extend %icon-danger-color;
+}
+
+.icon-danger-hover-color {
+    @extend %icon-danger-hover-color;
+}
+
+.icon-danger-pressed-color {
+    @extend %icon-danger-pressed-color;
+}
+
+.icon-dark-color {
+    @extend %icon-dark-color;
+}
+
+.icon-light-color {
+    @extend %icon-light-color;
+}
+
+// *********** Outline classes *********** //
+
+%outline-primary-pressed-color {
+    border: 1px solid $outline-primary-pressed-color;
+}
+
+%outline-secondary-color {
+    border: 1px solid $outline-secondary-color;
+}
+
+%outline-secondary-hover-color {
+    border: 1px solid $outline-secondary-hover-color;
+}
+
+%outline-secondary-disabled-color {
+    border: 1px solid $outline-secondary-disabled-color;
+}
+
+%outline-seperator-color {
+    border: 1px solid $outline-seperator-color;
+}
+
+%outline-button-color {
+    border: 1px solid $outline-button-color;
+}
+
+%outline-card-color {
+    border: 1px solid $outline-card-color;
+}
+
+%outline-danger-color {
+    border: 1px solid $outline-danger-color;
+}
+
+%outline-danger-hover-color {
+    border: 1px solid $outline-danger-hover-color;
+}
+
+%outline-danger-pressed-color {
+    border: 1px solid $outline-danger-pressed-color;
+}
+
+%outline-dark-color {
+    border: 1px solid $outline-dark-color;
+}
+
+.outline-primary-pressed-color {
+    @extend %outline-primary-pressed-color;
+}
+.outline-secondary-color {
+    @extend %outline-secondary-color;
+}
+
+.outline-secondary-hover-color {
+    @extend %outline-secondary-hover-color;
+}
+
+.outline-secondary-disabled-color {
+    @extend %outline-secondary-disabled-color;
+}
+
+.outline-seperator-color {
+    @extend %outline-seperator-color;
+}
+
+.outline-button-color {
+    @extend %outline-button-color;
+}
+
+.outline-card-color {
+    @extend %outline-card-color;
+}
+
+.outline-danger-color {
+    @extend %outline-danger-color;
+}
+
+.outline-danger-hover-color {
+    @extend %outline-danger-hover-color;
+}
+
+.outline-danger-pressed-color {
+    @extend %outline-danger-pressed-color;
+}
+
+.outline-dark-color {
+    @extend %outline-dark-color;
+}
+
+// *********** Semantic background classes *********** //
+
+%success-bg-color {
+    background-color: $success-bg-color;
+}
+
+%info-bg-color {
+    background-color: $info-bg-color;
+}
+
+%alert-bg-color {
+    background-color: $alert-bg-color;
+}
+
+%error-bg-color {
+    background-color: $error-bg-color;
+}
+
+.success-bg-color {
+    @extend %success-bg-color;
+}
+
+.info-bg-color {
+    @extend %info-bg-color;
+}
+
+.alert-bg-color {
+    @extend %alert-bg-color;
+}
+
+.error-bg-color {
+    @extend %error-bg-color;
+}
+
+// *********** Semantic Font classes *********** //
+
+%success-font-color {
+    color: $success-font-color;
+}
+
+%info-font-color {
+    color: $info-font-color;
+}
+
+%alert-font-color {
+    color: $alert-font-color;
+}
+
+%error-font-color {
+    color: $error-font-color;
+}
+
+.success-font-color {
+    @extend %success-font-color;
+}
+
+.info-font-color {
+    @extend %info-font-color;
+}
+
+.alert-font-color {
+    @extend %alert-font-color;
+}
+
+.error-font-color {
+    @extend %error-font-color;
+}
+
+// *********** Semantic outline classes *********** //
+
+%success-outline-color {
+    border: 1px solid $success-outline-color;
+}
+
+%info-outline-color {
+    border: 1px solid $info-outline-color;
+}
+
+%alert-outline-color {
+    border: 1px solid $alert-outline-color;
+}
+
+%error-outline-color {
+    border: 1px solid $error-outline-color;
+}
+
+.success-outline-color {
+    @extend %success-outline-color;
+}
+
+.info-outline-color {
+    @extend %info-outline-color;
+}
+
+.alert-outline-color {
+    @extend %alert-outline-color;
+}
+
+.error-outline-color {
+    @extend %error-outline-color;
+}

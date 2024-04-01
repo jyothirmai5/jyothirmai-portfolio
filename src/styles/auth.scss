@@ -1,0 +1,102 @@
+@use './fonts' as *;
+@use './variables.scss' as *;
+@use './colors' as *;
+@use './mixins.scss' as *;
+
+.company-logo {
+    height: 52px;
+}
+
+.title {
+    @extend .font-t4;
+    padding: 18px 0px 0px;
+}
+
+.sub-title {
+    @extend .font-t10;
+    color: $font-help-color;
+    padding: 8px 0px 0px;
+}
+
+.footer-text {
+    color: $font-help-color;
+    @extend .font-t13;
+}
+
+button:focus,
+button:focus-visible {
+    outline: none !important;
+}
+
+.MuiInputLabel-root.Mui-error {
+    color: $font-body-color !important;
+}
+
+.MuiFilledInput-root {
+    background-color: $bg-main-color !important;
+}
+
+.MuiInputBase-input {
+    border-radius: 8px;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.MuiFilledInput-root {
+    background: $bg-main-color !important;
+}
+
+.aub-auth-form .input-error {
+    @extend .font-t13;
+    color: $font-danger-color;
+    margin-left: 13px;
+    margin-top: 0.25rem;
+    width: 100%;
+    display: flex;
+}
+
+.api-input-error {
+    @extend .font-t10;
+    color: $font-danger-color;
+    margin-top: 1.375rem;
+    width: 100%;
+    display: flex;
+    gap: 14px;
+    .error-text{
+        margin: auto 0px;
+    }
+}
+
+.dialog-padding {
+    padding: 40px 40px 0px !important;
+}
+
+.reset-button-margin {
+    margin-bottom: 40px !important;
+}
+
+#forgot-password.dialog-padding {
+    padding: 40px !important;
+}
+
+// TODO: If login and signup dialogs height doesn't match add this
+// #login.dialog-padding {
+//     padding: 40px !important;
+// }
+
+.aub-auth-form {
+    width: 100%;
+    height: 100%;
+}
+
+.aub-auth-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footerBox {
+    background: $bg-nav-color;
+    padding: 24px 40px;
+}
