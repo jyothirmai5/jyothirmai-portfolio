@@ -7,6 +7,7 @@ import { Alert, Button, Snackbar } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import EmailIcon from '@mui/icons-material/Email';
 import { useMediaQuery } from "react-responsive";
+import '/src/styles/_colors.scss';
 
 interface ContactProps {
 
@@ -50,29 +51,30 @@ const Contact: FunctionComponent<ContactProps> = () => {
 
     const sendEmail = (e: any) => {
         e.preventDefault();
-
-        emailjs
-            .sendForm(
-                "service_6bd6bfe",
-                "template_li51ch7",
-                e.target,
-                "vM9PPl-V4HPaGWDFT"
-            )
-            .then(
-                (result) => {
-                    console.log(result);
-                    e.target.reset();
-                    setFormData({
-                        name: '',
-                        email: '',
-                        message: ''
-                    });
-                    setOpen(true);
-                },
-                (error) => {
-                    console.log(error);
-                }
-            );
+        if (process.env.VITE_SERVICE_ID && process.env.VITE_TEMPLATE_ID && process.env.VITE_USER_ID) {
+            emailjs
+                .sendForm(
+                    process.env.VITE_SERVICE_ID,
+                    process.env.VITE_TEMPLATE_ID,
+                    e.target,
+                    process.env.VITE_USER_ID
+                )
+                .then(
+                    (result) => {
+                        console.log(result);
+                        e.target.reset();
+                        setFormData({
+                            name: '',
+                            email: '',
+                            message: ''
+                        });
+                        setOpen(true);
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                );
+        }
     };
     return (
         <>
@@ -89,17 +91,17 @@ const Contact: FunctionComponent<ContactProps> = () => {
                     <Button className="bg-link-color" sx={{ color: '#242424', fontWeight: '700' }} variant="contained" type="submit">Send Message</Button>
                 </form>
                 <div className={styles['contact-text']}>
-                    <h2 className={styles['text-style-label']}>Get In
+                    <h2 className={styles['text-style-label']}><span>Get In</span>
                         {!isMobile && !isTablet && <br />}<span className={styles['colored-text']}>Touch</span>.</h2>
                     <p className={styles['contact-subtitle']}> Have a question or project in mind?
                         <br />
                         Feel free to reach out! I'm here to help turn your ideas into reality.
                     </p>
                     <div>
-                        <div className={styles['email-text']}><EmailIcon fontSize={isMobile || isTablet ? 'small' : 'large'} sx={{ color: '#2cf8ff' }} />
+                        <div className={styles['email-text']}><EmailIcon fontSize={isMobile || isTablet ? 'small' : 'large'} sx={{ color: '#2cf8ff', margin: 'auto 0px' }} />
                             <div className={`${styles['contact-subtitle']}`}>
                                 <span>Mail Me</span><br />
-                                <a className={styles['colored-text']} href="mailto:chjyothirmai5@gmail.com">chjyothirmai5@gmail.com</a>
+                                <a className={`${styles['colored-text']} ${styles['email-address']}`} href="mailto:chjyothirmai5@gmail.com">chjyothirmai5@gmail.com</a>
                             </div>
                         </div>
                     </div>

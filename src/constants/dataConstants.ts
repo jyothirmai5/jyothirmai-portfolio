@@ -64,7 +64,7 @@ export const projects = [
         name: 'Seven Bird Travel',
         imageUrl: project1,
         location: 'Humber College',
-        timeline: 'Feb 2024 - Feb 2024',
+        timeline: 'Feb 2024 - 2 Weeks',
         skills: ['Angular', 'TypeScript', 'Mapbox', 'Geolocation', 'POI', 'Bootstrap'],
         description: `Seven Bird Travel is a personal project I developed using Angular. This platform enables users to explore various travel destinations effortlessly. Leveraging the Mapbox API, users can search for destinations, accessing detailed location information seamlessly.
 
@@ -79,7 +79,7 @@ export const projects = [
         name: 'Studio Seven',
         imageUrl: project2,
         location: 'Humber College',
-        timeline: 'Nov 2023 - Nov 2023',
+        timeline: 'Nov 2023 - 2 Weeks',
         skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
         description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
         

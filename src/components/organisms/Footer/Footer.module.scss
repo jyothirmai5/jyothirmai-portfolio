@@ -1,0 +1,28 @@
+@use '/src/styles/colors.scss' as *;
+@use '/src/styles/variables.scss' as *;
+@use '/src/styles/mixins.scss' as *;
+
+.icons {
+    display: flex;
+    gap: 10px;
+
+    .icon {
+        &:hover {
+            color: #2cf8ff;
+        }
+    }
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    @extend .bg-primary-color;
+}
+
+.footer-seperator {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border-top: 1px solid $font-primary-color;
+    text-align: center;
+}

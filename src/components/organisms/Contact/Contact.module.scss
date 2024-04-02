@@ -14,6 +14,7 @@
 
     @include media(mobile) {
         font-size: 4.25rem;
+        white-space: wrap;
     }
 
     @include media(tablet) {
@@ -64,7 +65,7 @@
     width: 100%;
 
     @include media(mobile) {
-        padding: 30px;
+        padding: 15px;
         margin: auto;
         width: 90%;
     }
@@ -96,5 +97,14 @@
 
     @include media(mobile, tablet) {
         margin: auto;
+    }
+
+    .email-address {
+        color: #2cf8ff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }

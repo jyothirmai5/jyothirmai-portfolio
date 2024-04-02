@@ -41,9 +41,11 @@ const HeadingSection: React.FC<IHeadingProps> = ({
                         <IconButton target='_blank' href='https://github.com/jyothirmai5'>
                             <GitHubIcon className={styles['icon']} sx={{ color: 'white' }} />
                         </IconButton>
-                        <Button className={styles['cv-btn']} target='_blank' href='/src/assets/resume.pdf' variant="text">Download CV &nbsp;
-                            <CloudDownloadIcon />
-                        </Button>
+                        <a target='_blank' href='/public/resume.pdf'>
+                            <Button className={styles['cv-btn']} variant="text">Download CV &nbsp;
+                                <CloudDownloadIcon />
+                            </Button>
+                        </a>
                     </div>
                 </div>
                 <img className={styles['profile-img']} src={profilePic} width={isMobile || isTablet ? 250 : 400} />

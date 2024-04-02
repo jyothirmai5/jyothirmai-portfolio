@@ -19,7 +19,7 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
             <Dialog open={true} onClose={closeDialog}
                 PaperProps={{
                     sx: {
-                        maxWidth: 'md',
+                        maxWidth: 'lg',
                         color: 'rgba(255, 255, 255, 0.87)',
                         backgroundColor: '#242424',
                         border: '1px solid rgba(255, 255, 255, 0)',
@@ -32,53 +32,76 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3 }}
                 >
+                    <IconButton
+                        edge="end"
+                        color="inherit"
+                        onClick={closeDialog}
+                        aria-label="close"
+                        sx={{
+                            position: 'absolute',
+                            right: '4%'
+                        }}
+                    >
+                        <CloseIcon fontSize={isMobile ? 'small' : 'medium'} />
+                    </IconButton>
                     <div className={styles['dialog-heading-div']}>
                         <div className={styles.project}><div className={styles['project-title']}>{project.name}
                         </div>
                             <p className={styles['project-subtext']}>Project</p>
                         </div>
-                        <IconButton
-                            edge="end"
-                            color="inherit"
-                            onClick={closeDialog}
-                            aria-label="close"
-                        >
-                            <CloseIcon fontSize={isMobile ? 'small' : 'medium'} />
-                        </IconButton>
                     </div>
                     <div className={styles['project-desc']}>
-                        <div className={styles['project-subtitle']}>Associated with
-                            <b> {project.location}</b></div>
-                        <p><b>Timeline: </b>{project.timeline}</p>
-                        {project?.client && <p><b>Client Location: </b>{project?.client}</p>}
-                        <p>
-                            <b>Tech Stack: </b>
-                            <div className={styles["lists-container"]}>
-                                <div className={styles["list"]}>
-                                    <ul>
-                                        {project.skills.map((skill, index) => {
-                                            let techStackList = isMobile ? project.skills.length : Math.ceil(project.skills.length / 2);
-                                            if (index < techStackList) {
-                                                return <li key={index}>{skill}</li>;
-                                            }
-                                            return null;
-                                        })}
-                                    </ul>
+                        <div>
+                            <img className={styles['img-container']} src={project.imageUrl}></img>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><b>Associated with</b></td>
+                                        <td>{project.location}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Timeline</b></td>
+                                        <td>{project.timeline}</td>
+                                    </tr>
+                                    {project?.client &&
+                                        <tr>
+                                            <td><b>Client Location</b></td>
+                                            <td>{project.client}</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            <b style={{ fontSize: '1.5rem' }}>Description</b>
+                            <p>{project.description}</p>
+                            <p>
+                                <b>Tech Stack: </b>
+                                <div className={styles["lists-container"]}>
+                                    <div className={styles["list"]}>
+                                        <ul>
+                                            {project.skills.map((skill, index) => {
+                                                let techStackList = isMobile ? project.skills.length : Math.ceil(project.skills.length / 2);
+                                                if (index < techStackList) {
+                                                    return <li key={index}>{skill}</li>;
+                                                }
+                                                return null;
+                                            })}
+                                        </ul>
+                                    </div>
+                                    {!isMobile && <div className={styles["list"]}>
+                                        <ul>
+                                            {project.skills.map((skill, index) => {
+                                                if (index >= Math.ceil(project.skills.length / 2)) {
+                                                    return <li key={index}>{skill}</li>;
+                                                }
+                                                return null;
+                                            })}
+                                        </ul>
+                                    </div>}
                                 </div>
-                                {!isMobile && <div className={styles["list"]}>
-                                    <ul>
-                                        {project.skills.map((skill, index) => {
-                                            if (index >= Math.ceil(project.skills.length / 2)) {
-                                                return <li key={index}>{skill}</li>;
-                                            }
-                                            return null;
-                                        })}
-                                    </ul>
-                                </div>}
-                            </div>
-                        </p>
-                        <b>Description:</b>
-                        <p>{project.description}</p>
+                            </p>
+                        </div>
                     </div>
                 </motion.div>
             </Dialog>
