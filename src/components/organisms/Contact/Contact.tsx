@@ -39,6 +39,8 @@ const Contact: FunctionComponent<ContactProps> = () => {
         setFormData({ ...formData, [name]: value });
     };
     const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+        console.log(event);
+
         if (reason === 'clickaway') {
             return;
         }
@@ -58,6 +60,7 @@ const Contact: FunctionComponent<ContactProps> = () => {
             )
             .then(
                 (result) => {
+                    console.log(result);
                     e.target.reset();
                     setFormData({
                         name: '',
