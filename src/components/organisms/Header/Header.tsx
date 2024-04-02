@@ -54,7 +54,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
             <AppBar position="static" className={styles['app-bar']}>
                 <Toolbar className={styles['header-toolbar']}>
                     {/* Add logo */}
-                    <Typography variant="h6" sx={{ fontWeight: 700, textDecoration: 'none', color: 'inherit', flexGrow: 1 }}>
+                    <Typography variant="h6" sx={{ fontWeight: 700, textDecoration: 'none', color: 'inherit', flexGrow: 1, padding: 'auto' }}>
                         Jyothirmai.dev
                     </Typography>
                     {isDesktopOrTablet ?

@@ -4,13 +4,13 @@
 
 .text-style-label {
     font-family: Space Grotesk, sans-serif;
-    font-size: 7.25rem;
+    font-size: 6.25rem;
     font-weight: 400;
     line-height: 1;
-    background-image: linear-gradient(to right, #2cf8ff, #18ffb0);
-    background-clip: text;
-    color: transparent;
-    text-align: center;
+    white-space: pre;
+    text-align: left;
+    max-width: 40rem;
+    margin: 0px;
 
     @include media(mobile) {
         font-size: 4.25rem;
@@ -18,5 +18,83 @@
 
     @include media(tablet) {
         font-size: 5.25rem;
+    }
+}
+
+.colored-text {
+    background-image: linear-gradient(to right, #2cf8ff, #18ffb0);
+    background-clip: text;
+    color: transparent;
+
+    @include media(mobile, tablet) {
+        text-align: center;
+    }
+}
+
+.contact-container {
+    display: flex;
+    gap: 5rem;
+    padding-top: 5rem;
+
+    @include media(mobile, tablet) {
+        gap: 3rem;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @include media(tablet) {
+        margin: auto;
+    }
+}
+
+.contact-form-div {
+    border: 1px solid $font-blue-color;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40rem;
+    border-radius: 12px;
+    width: 100%;
+
+    @include media(mobile) {
+        padding: 30px;
+        margin: auto;
+        width: 90%;
+    }
+
+    @include media(tablet) {
+        width: 30rem;
+        padding: 30px;
+        margin: auto;
+    }
+}
+
+.contact-subtitle {
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.input-fields {
+    display: flex;
+    gap: 20px;
+
+    @include media(mobile) {
+        flex-direction: column;
+    }
+}
+
+.email-text {
+    display: flex;
+    gap: 10px;
+
+    @include media(mobile, tablet) {
+        margin: auto;
     }
 }

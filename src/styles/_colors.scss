@@ -1,7 +1,5 @@
 @use 'variables' as *;
 
-// *********** Background classes *********** //
-
 %bg-primary-color {
     background-color: $bg-primary-color;
 }
@@ -34,4 +32,12 @@
 
 .font-primary-color {
     @extend %font-primary-color;
+}
+
+%font-secondary-color {
+    color: $bg-secondary-color;
+}
+
+.font-secondary-color {
+    @extend %font-secondary-color;
 }

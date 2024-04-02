@@ -19,8 +19,8 @@
     height: 72px;
     box-shadow: 0 0 20px 5px rgba(60, 60, 60, 0.5) !important;
 
-    @media (max-width: $grid-breakpoints-sm) {
-        padding: 0px 24px;
+    @include media(mobile) {
+        padding: 10px 24px;
     }
 }
 
@@ -83,7 +83,7 @@
 
 .home-header-right-gradient {
     z-index: 1;
-    width: 20rem;
+    width: 15rem;
     height: 20rem;
     background-color: #2cf8ff;
     filter: blur(200px);
@@ -96,11 +96,13 @@
     left: auto;
 
     @include media(mobile) {
-        width: 9rem;
+        width: 5rem;
         height: 40rem;
+        top: 0%;
+        filter: blur(100px);
     }
 
     @include media(tablet) {
-        width: 15rem;
+        left: unset;
     }
 }

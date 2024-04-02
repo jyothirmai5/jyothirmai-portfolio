@@ -19,7 +19,7 @@ export const aboutMe = [
     {
         imageUrl: point1,
         title: 'Experienced Web Developer',
-        description: 'Over 4 years of hands-on experience in creating user-friendly websites, focusing on both design and functionality.'
+        description: 'Over 5 years of hands-on experience in creating user-friendly websites, focusing on both design and functionality.'
     },
     {
         imageUrl: point2,
@@ -94,7 +94,7 @@ export const projects = [
         timeline: 'Feb 2023 - Jun 2023',
         location: 'Aubergine Solutions - Global UX Design and Development Company',
         client: 'United States',
-        skills: ['React.js', 'Stripe Connect', 'TypeScript', 'Redux', 'scss', 'HTML5', 'Code Review', 'Software Documentation', 'Progress Notes', 'Retrospectives', 'SVG Rendering', 'Stadium View'],
+        skills: ['React', 'Stripe Connect', 'TypeScript', 'Redux', 'scss', 'HTML5', 'Code Review', 'Software Documentation', 'Progress Notes', 'Retrospectives', 'SVG Rendering', 'Stadium View'],
         description: `I led a project where we built a website for buying and selling national sports tickets. We started from scratch, using React with Typescript and following a Scrum framework. We successfully added features like login, buying and selling, stadium map view with seat selection, and secure payments using Stripe Connect.
 
         This project taught me to work well under pressure and communicate effectively with clients. I also learned to write better code, review code more thoroughly, and collaborate better with my team.

@@ -11,8 +11,8 @@
 .heroMain {
     align-items: center;
     display: flex;
-    gap: 10rem;
-    justify-content: center;
+    gap: 1rem;
+    justify-content: space-between;
     position: relative;
 
     @include media(mobile) {
@@ -28,7 +28,7 @@
 .heroText {
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
+    max-width: 40rem;
     position: relative;
 }
 
@@ -72,5 +72,13 @@
         &:hover {
             color: #2cf8ff;
         }
+    }
+}
+
+.cv-btn {
+    color: #ffffff !important;
+
+    &:hover {
+        color: #2cf8ff !important;
     }
 }

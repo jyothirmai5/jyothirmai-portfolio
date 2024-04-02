@@ -5,8 +5,9 @@ import hiEmoji from '../../../assets/hi-emoji.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import styles from './HeadingSection.module.scss';
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import { useMediaQuery } from 'react-responsive';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 interface IHeadingProps {
     title: string;
@@ -40,7 +41,9 @@ const HeadingSection: React.FC<IHeadingProps> = ({
                         <IconButton target='_blank' href='https://github.com/jyothirmai5'>
                             <GitHubIcon className={styles['icon']} sx={{ color: 'white' }} />
                         </IconButton>
-
+                        <Button className={styles['cv-btn']} target='_blank' href='/src/assets/resume.pdf' variant="text">Download CV &nbsp;
+                            <CloudDownloadIcon />
+                        </Button>
                     </div>
                 </div>
                 <img className={styles['profile-img']} src={profilePic} width={isMobile || isTablet ? 250 : 400} />

@@ -25,7 +25,7 @@ const Home: FunctionComponent<HomeProps> = () => {
 
     return (
         <div ref={homeRef}>
-            <HeadingSection title="Front-End Design & Developer" subTitle="Hi, I'm Jyothirmai Ch. A passionate Front-end React Developer based in Toronto, Canada" />
+            <HeadingSection title="Front-End Design & Developer" subTitle="Hello, I'm Jyothirmai Ch. A passionate Front-end React Developer based in Toronto, Canada." />
             <TechStack />
         </div>
     );

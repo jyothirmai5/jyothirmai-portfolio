@@ -21,3 +21,9 @@
         @extend .selected-link;
     }
 }
+
+.close-icon {
+    position: absolute !important;
+    top: 6% !important;
+    right: 10% !important;
+}

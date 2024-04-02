@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import { Box, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useSelector } from "react-redux";
+import CloseIcon from '@mui/icons-material/Close';
 
 interface HamBurgerProps {
     scrollToSection: (elementRef: any, tab: string) => void;
@@ -42,11 +43,11 @@ const HamBurger: FunctionComponent<HamBurgerProps> = ({ scrollToSection, homeRef
     }
 
     const DrawerList = (
-        <Box sx={{ width: 300 }} role="presentation" onClick={toggleDrawer(false)}>
+        <Box sx={{ margin: 'auto' }} role="presentation" onClick={toggleDrawer(false)}>
             <List>
                 {['Home', 'About', 'Projects', 'Contact'].map((text, index) => (
                     <nav>
-                        <ListItem key={text} disablePadding>
+                        <ListItem key={text}>
                             <ListItemButton onClick={() => onNavigate(text)}>
                                 <ListItemText className={`${styles['each-link']} ${currentTab === text.toLowerCase() ? styles['selected-link'] : ''}`} key={index} primary={text} />
                             </ListItemButton>
@@ -66,11 +67,17 @@ const HamBurger: FunctionComponent<HamBurgerProps> = ({ scrollToSection, homeRef
             <Drawer open={open} onClose={toggleDrawer(false)}
                 PaperProps={{
                     style: {
-                        backgroundColor: '#000000'
+                        backgroundColor: '#000000',
+                        width: '100%'
                     }
                 }}
             >
-                {DrawerList}
+                <>
+                    <IconButton className={styles['close-icon']} onClick={toggleDrawer(false)}>
+                        <CloseIcon sx={{ color: "#ffffff" }} />
+                    </IconButton>
+                    {DrawerList}
+                </>
             </Drawer>
         </div>
     );
