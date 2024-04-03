@@ -52,7 +52,10 @@
     font-family: Space Grotesk, sans-serif;
     font-size: 4rem;
     font-weight: 500;
+    background-clip: text;
+    color: transparent;
     @extend .font-primary-color;
+    @extend .bg-link-color;
 
     @include media(mobile) {
         margin-top: 35px;

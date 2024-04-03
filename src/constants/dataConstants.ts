@@ -6,7 +6,6 @@ import project5 from '../assets/drivecenter.png';
 import project6 from '../assets/mind-master.png';
 import project7 from '../assets/builds.jpg';
 import project8 from '../assets/datum.png';
-import point1 from '../assets/about/development.png';
 import point2 from '../assets/about/learner.png';
 import point3 from '../assets/about/help.png';
 import point4 from '../assets/about/conversation.png';
@@ -16,11 +15,6 @@ import point7 from '../assets/about/achievement.png';
 import point8 from '../assets/about/reading-book.png';
 
 export const aboutMe = [
-    {
-        imageUrl: point1,
-        title: 'Experienced Web Developer',
-        description: 'Over 5 years of hands-on experience in creating user-friendly websites, focusing on both design and functionality.'
-    },
     {
         imageUrl: point2,
         title: 'Adaptable and Quick Learner',
@@ -80,7 +74,7 @@ export const projects = [
         imageUrl: project2,
         location: 'Humber College',
         timeline: 'Nov 2023 - 2 Weeks',
-        skills: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
+        skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
         description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
         
         One of the standout features of Studio Seven is its personalized functionality. Users can effortlessly add their favorite items to a dedicated favorites list for future reference. Additionally, our intuitive interface enables smooth navigation and streamlined checkout processes, enhancing user satisfaction and retention.
@@ -134,7 +128,7 @@ export const projects = [
         imageUrl: project6,
         location: 'AppIt Ventures',
         client: 'United States',
-        skills: ['Angular', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],
+        skills: ['React', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],
         description: `I contributed to the Mindmaster project by developing the admin portal using Angular and TypeScript. My responsibilities included creating a user-friendly interface for uploading audio affirmations, motivational text, and images. Despite the challenges, I successfully completed the project within a tight deadline of less than two months.
 
         This experience allowed me to sharpen my skills in Angular and TypeScript, as well as my ability to design intuitive user interfaces. Working on the Mindmaster project provided valuable insights into project management and the importance of meeting deadlines while delivering quality results.`
@@ -146,7 +140,7 @@ export const projects = [
         imageUrl: project7,
         location: 'AppIt Ventures',
         client: 'Internal Project',
-        skills: ['Angular', 'TypeScript', 'CSS', 'HTML5'],
+        skills: ['React', 'TypeScript', 'CSS', 'HTML5'],
         description: `I contributed to the Secure Builds project, an internal initiative primarily focused on uploading project builds and ensuring their accessibility to clients. In this project, my role involved developing a system to securely upload project builds and manage permissions effectively. This included ensuring that clients could access the builds they needed.`
     },
     {
@@ -156,7 +150,7 @@ export const projects = [
         imageUrl: project8,
         location: 'AppIt Ventures',
         client: 'United States',
-        skills: ['React js', 'Redux', 'Redux saga', 'Fabric js', 'canvas', 'JavaScript', 'stripe'],
+        skills: ['React', 'Redux', 'Redux saga', 'Fabric js', 'canvas', 'JavaScript', 'stripe'],
         description: `In the Datum project, I played a significant role in developing floor plans using the Fabric.js package and incorporating various user interface features using React, Redux, and Redux Saga. Additionally, I contributed to backend code implementation.
 
         This project provided hands-on experience in crafting interactive floor plans and enhancing user experience through seamless UI functionalities. It honed my skills in frontend development and backend integration, enabling me to contribute effectively to the project's success.

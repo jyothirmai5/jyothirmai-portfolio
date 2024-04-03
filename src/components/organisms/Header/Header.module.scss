@@ -104,5 +104,6 @@
 
     @include media(tablet) {
         left: unset;
+        width: 10rem;
     }
 }
