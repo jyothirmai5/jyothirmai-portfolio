@@ -6,7 +6,7 @@ import project5 from '../assets/drivecenter.png';
 import project6 from '../assets/mind-master.png';
 import project7 from '../assets/builds.jpg';
 import project8 from '../assets/datum.png';
-import project9 from '../assets/domo-connectors.jpeg';
+import project9 from '../assets/stratorsoft-domo.png';
 import point2 from '../assets/about/learner.png';
 import point3 from '../assets/about/help.png';
 import point4 from '../assets/about/conversation.png';
@@ -55,53 +55,6 @@ export const aboutMe = [
 
 export const projects = [
     {
-        id: 1,
-        name: 'Seven Bird Travel',
-        imageUrl: project1,
-        location: 'Humber College',
-        timeline: 'Feb 2024 - 2 Weeks',
-        skills: ['Angular', 'TypeScript', 'Mapbox', 'Geolocation', 'POI', 'Bootstrap'],
-        description: `Seven Bird Travel is a personal project I developed using Angular. This platform enables users to explore various travel destinations effortlessly. Leveraging the Mapbox API, users can search for destinations, accessing detailed location information seamlessly.
-
-        In addition to destination exploration, Seven Bird Travel provides users with the ability to search for travel-related websites and access essential metadata such as phone numbers. I implemented this feature to enhance user convenience and streamline their travel planning process.
-        
-        A significant aspect of this project was the development of an interactive map user interface (UI). By integrating interactive elements into the map UI, users can engage with the platform dynamically, fostering an immersive travel experience.
-        
-        Through Seven Bird Travel, I honed my skills in Angular development, API integration, and user interface design. This project not only showcases my technical abilities but also highlights my passion for creating user-centric applications that simplify complex tasks like travel planning.`
-    },
-    {
-        id: 2,
-        name: 'Studio Seven',
-        imageUrl: project2,
-        location: 'Humber College',
-        website: 'frabjous-beignet-7fd00c.netlify.app',
-        timeline: 'Nov 2023 - 2 Weeks',
-        skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
-        description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
-        
-        One of the standout features of Studio Seven is its personalized functionality. Users can effortlessly add their favorite items to a dedicated favorites list for future reference. Additionally, our intuitive interface enables smooth navigation and streamlined checkout processes, enhancing user satisfaction and retention.
-        
-        Leading a dedicated team of developers and designers, I ensured that Studio Seven met stringent quality standards and delivered a user-friendly interface. By leveraging cutting-edge technologies and best practices, we optimized performance and reliability, ensuring a seamless shopping experience for our customers.`
-    },
-    {
-        id: 2,
-        name: 'DOMO Connectors',
-        imageUrl: project9,
-        location: 'Upwork Freelance Contract at Stratorsoft',
-        client: 'United States',
-        website: 'https://www.stratorsoft.com/about-us',
-        timeline: 'August 2023 - April 2024',
-        skills: ['Domo API', 'JavaScript', 'Connector Development', 'Data Integration', 'DOMO IDE', 'RESTful APIs'],
-        description: `During my tenure at Stratorsoft, I was involved in a project focused on system integration using JavaScript. The project aimed to enhance data connectivity and streamline processes for clients by integrating APIs from PDK and Feenics into Domo connectors.
-        Developed custom integration solutions using JavaScript to facilitate system connectivity.
-        Integrated APIs from PDK and Feenics into Domo connectors to enable seamless data transmission.
-        Utilized DOMO IDE to design and implement efficient integration workflows.
-        Collaborated closely with team members to understand client requirements and ensure successful project execution.
-        Through my contributions at Stratorsoft, 
-        clients experienced improved system interoperability and enhanced data accessibility. The integration solutions implemented facilitated smoother data exchange between platforms, ultimately improving operational efficiency and enabling informed decision-making.
-        `
-    },
-    {
         id: 3,
         name: 'EthicalEtix',
         imageUrl: project3,
@@ -144,6 +97,67 @@ export const projects = [
         My role involved active participation in team discussions to brainstorm ideas for better development. I focused on enhancing user experience by allowing users to sign up, schedule, reschedule, and cancel appointments. Additionally, I worked on implementing the calendar view feature to facilitate appointment management. Through this project, I gained valuable experience in Angular development and collaboration within a team environment.`
     },
     {
+        id: 8,
+        name: 'Datum',
+        timeline: 'Jun 2020 - Nov 2020',
+        imageUrl: project8,
+        location: 'AppIt Ventures',
+        client: 'United States',
+        skills: ['React', 'Redux', 'Redux saga', 'Fabric js', 'canvas', 'JavaScript', 'stripe'],
+        description: `In the Datum project, I played a significant role in developing floor plans using the Fabric.js package and incorporating various user interface features using React, Redux, and Redux Saga. Additionally, I contributed to backend code implementation.
+
+        This project provided hands-on experience in crafting interactive floor plans and enhancing user experience through seamless UI functionalities. It honed my skills in frontend development and backend integration, enabling me to contribute effectively to the project's success.
+        
+        The Datum project showcased my ability to collaborate within a team, adapt to diverse technologies, and deliver solutions aligned with project objectives.`
+    },
+    {
+        id: 2,
+        name: 'Studio Seven',
+        imageUrl: project2,
+        location: 'Humber College',
+        website: 'frabjous-beignet-7fd00c.netlify.app',
+        timeline: 'Nov 2023 - 2 Weeks',
+        skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
+        description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
+        
+        One of the standout features of Studio Seven is its personalized functionality. Users can effortlessly add their favorite items to a dedicated favorites list for future reference. Additionally, our intuitive interface enables smooth navigation and streamlined checkout processes, enhancing user satisfaction and retention.
+        
+        Leading a dedicated team of developers and designers, I ensured that Studio Seven met stringent quality standards and delivered a user-friendly interface. By leveraging cutting-edge technologies and best practices, we optimized performance and reliability, ensuring a seamless shopping experience for our customers.`
+    },
+    {
+        id: 2,
+        name: 'DOMO Connectors',
+        imageUrl: project9,
+        location: 'Upwork Freelance Contract at Stratorsoft',
+        client: 'United States',
+        website: 'https://www.stratorsoft.com/about-us',
+        timeline: 'August 2023 - April 2024',
+        skills: ['Domo API', 'JavaScript', 'Connector Development', 'Data Integration', 'DOMO IDE', 'RESTful APIs'],
+        description: `During my tenure at Stratorsoft, I was involved in a project focused on system integration using JavaScript. The project aimed to enhance data connectivity and streamline processes for clients by integrating APIs from PDK and Feenics into Domo connectors.
+        Developed custom integration solutions using JavaScript to facilitate system connectivity.
+        Integrated APIs from PDK and Feenics into Domo connectors to enable seamless data transmission.
+        Utilized DOMO IDE to design and implement efficient integration workflows.
+        Collaborated closely with team members to understand client requirements and ensure successful project execution.
+        Through my contributions at Stratorsoft, 
+        clients experienced improved system interoperability and enhanced data accessibility. The integration solutions implemented facilitated smoother data exchange between platforms, ultimately improving operational efficiency and enabling informed decision-making.
+        `
+    },
+    {
+        id: 1,
+        name: 'Seven Bird Travel',
+        imageUrl: project1,
+        location: 'Humber College',
+        timeline: 'Feb 2024 - 2 Weeks',
+        skills: ['Angular', 'TypeScript', 'Mapbox', 'Geolocation', 'POI', 'Bootstrap'],
+        description: `Seven Bird Travel is a personal project I developed using Angular. This platform enables users to explore various travel destinations effortlessly. Leveraging the Mapbox API, users can search for destinations, accessing detailed location information seamlessly.
+
+        In addition to destination exploration, Seven Bird Travel provides users with the ability to search for travel-related websites and access essential metadata such as phone numbers. I implemented this feature to enhance user convenience and streamline their travel planning process.
+        
+        A significant aspect of this project was the development of an interactive map user interface (UI). By integrating interactive elements into the map UI, users can engage with the platform dynamically, fostering an immersive travel experience.
+        
+        Through Seven Bird Travel, I honed my skills in Angular development, API integration, and user interface design. This project not only showcases my technical abilities but also highlights my passion for creating user-centric applications that simplify complex tasks like travel planning.`
+    },
+    {
         id: 6,
         name: 'MindMaster',
         timeline: 'Jan 2021 - Feb 2021',
@@ -165,19 +179,5 @@ export const projects = [
         client: 'Internal Project',
         skills: ['React', 'TypeScript', 'CSS', 'HTML5'],
         description: `I contributed to the Secure Builds project, an internal initiative primarily focused on uploading project builds and ensuring their accessibility to clients. In this project, my role involved developing a system to securely upload project builds and manage permissions effectively. This included ensuring that clients could access the builds they needed.`
-    },
-    {
-        id: 8,
-        name: 'Datum',
-        timeline: 'Jun 2020 - Nov 2020',
-        imageUrl: project8,
-        location: 'AppIt Ventures',
-        client: 'United States',
-        skills: ['React', 'Redux', 'Redux saga', 'Fabric js', 'canvas', 'JavaScript', 'stripe'],
-        description: `In the Datum project, I played a significant role in developing floor plans using the Fabric.js package and incorporating various user interface features using React, Redux, and Redux Saga. Additionally, I contributed to backend code implementation.
-
-        This project provided hands-on experience in crafting interactive floor plans and enhancing user experience through seamless UI functionalities. It honed my skills in frontend development and backend integration, enabling me to contribute effectively to the project's success.
-        
-        The Datum project showcased my ability to collaborate within a team, adapt to diverse technologies, and deliver solutions aligned with project objectives.`
     }
 ]

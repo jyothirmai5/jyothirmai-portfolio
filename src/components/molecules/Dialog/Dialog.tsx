@@ -53,30 +53,32 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                     <div className={styles['project-desc']}>
                         <div>
                             <img className={styles['img-container']} src={project.imageUrl}></img>
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><b>Associated with</b></td>
-                                        <td>{project.location}</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Timeline</b></td>
-                                        <td>{project.timeline}</td>
-                                    </tr>
-                                    {project?.client &&
+                            <div className={styles['table-container']}>
+                                <table>
+                                    <tbody>
                                         <tr>
-                                            <td><b>Client Location</b></td>
-                                            <td>{project.client}</td>
+                                            <td><b>Associated with</b></td>
+                                            <td>{project.location}</td>
                                         </tr>
-                                    }
-                                    {project?.website &&
                                         <tr>
-                                            <td><b>Website</b></td>
-                                            <td><a className={styles['website']} target="_blank" href={project.website}>{project.website}</a></td>
+                                            <td><b>Timeline</b></td>
+                                            <td>{project.timeline}</td>
                                         </tr>
-                                    }
-                                </tbody>
-                            </table>
+                                        {project?.client &&
+                                            <tr>
+                                                <td><b>Client Location</b></td>
+                                                <td>{project.client}</td>
+                                            </tr>
+                                        }
+                                        {project?.website &&
+                                            <tr>
+                                                <td><b>Website</b></td>
+                                                <td><a className={styles['website']} target="_blank" href={project.website}>{project.website}</a></td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div>
                             <b style={{ fontSize: '1.5rem' }}>Description</b>
