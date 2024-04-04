@@ -6,6 +6,7 @@ import project5 from '../assets/drivecenter.png';
 import project6 from '../assets/mind-master.png';
 import project7 from '../assets/builds.jpg';
 import project8 from '../assets/datum.png';
+import project9 from '../assets/domo-connectors.jpeg';
 import point2 from '../assets/about/learner.png';
 import point3 from '../assets/about/help.png';
 import point4 from '../assets/about/conversation.png';
@@ -73,6 +74,7 @@ export const projects = [
         name: 'Studio Seven',
         imageUrl: project2,
         location: 'Humber College',
+        website: 'frabjous-beignet-7fd00c.netlify.app',
         timeline: 'Nov 2023 - 2 Weeks',
         skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Material-UI'],
         description: `Excited to share about Studio Seven, an innovative e-commerce venture revolutionizing the furniture shopping experience. As the Project Manager, I spearheaded the development of this dynamic platform, where users immerse themselves in a curated collection of exquisite furniture items.
@@ -80,6 +82,24 @@ export const projects = [
         One of the standout features of Studio Seven is its personalized functionality. Users can effortlessly add their favorite items to a dedicated favorites list for future reference. Additionally, our intuitive interface enables smooth navigation and streamlined checkout processes, enhancing user satisfaction and retention.
         
         Leading a dedicated team of developers and designers, I ensured that Studio Seven met stringent quality standards and delivered a user-friendly interface. By leveraging cutting-edge technologies and best practices, we optimized performance and reliability, ensuring a seamless shopping experience for our customers.`
+    },
+    {
+        id: 2,
+        name: 'Javascript Developer',
+        imageUrl: project9,
+        location: 'Upwork Freelance Contract at Stratorsoft',
+        client: 'United States',
+        website: 'https://www.stratorsoft.com/about-us',
+        timeline: 'August 2023 - April 2024',
+        skills: ['Domo API', 'JavaScript', 'Connector Development', 'Data Integration', 'DOMO IDE', 'RESTful APIs'],
+        description: `During my tenure at Stratorsoft, I was involved in a project focused on system integration using JavaScript. The project aimed to enhance data connectivity and streamline processes for clients by integrating APIs from PDK and Feenics into Domo connectors.
+        Developed custom integration solutions using JavaScript to facilitate system connectivity.
+        Integrated APIs from PDK and Feenics into Domo connectors to enable seamless data transmission.
+        Utilized DOMO IDE to design and implement efficient integration workflows.
+        Collaborated closely with team members to understand client requirements and ensure successful project execution.
+        Through my contributions at Stratorsoft, 
+        clients experienced improved system interoperability and enhanced data accessibility. The integration solutions implemented facilitated smoother data exchange between platforms, ultimately improving operational efficiency and enabling informed decision-making.
+        `
     },
     {
         id: 3,
@@ -100,6 +120,7 @@ export const projects = [
         name: 'ComplyHub',
         timeline: 'Sep 2022 - Jan 2023',
         imageUrl: project4,
+        website: 'https://complyhubportal.retina-labs.com/auth/login',
         location: 'Aubergine Solutions - Global UX Design and Development Company',
         client: 'Montreal, Canada',
         skills: ['Angular', 'TypeScript', 'Syncfusion', 'Keycloak', 'angular calendar', 'RxJS'],
@@ -114,6 +135,7 @@ export const projects = [
         name: 'Safeway Driving',
         imageUrl: project5,
         timeline: 'Nov 2021 - Jun 2022',
+        website: 'https://drivecenter.safewaydriving.com/',
         location: 'AppIt Ventures',
         client: 'United States',
         skills: ['Angular', 'TypeScript', 'Material-UI', 'RxJS', 'NgRx', 'angular calendar'],
@@ -126,6 +148,7 @@ export const projects = [
         name: 'MindMaster',
         timeline: 'Jan 2021 - Feb 2021',
         imageUrl: project6,
+        website: 'https://www.mindmaster.app/how-to-use-mind-master',
         location: 'AppIt Ventures',
         client: 'United States',
         skills: ['React', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],

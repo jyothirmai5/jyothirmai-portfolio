@@ -69,6 +69,12 @@ const DialogCompo: FunctionComponent<DialogProps> = ({ project, closeDialog }) =
                                             <td>{project.client}</td>
                                         </tr>
                                     }
+                                    {project?.website &&
+                                        <tr>
+                                            <td><b>Website</b></td>
+                                            <td><a className={styles['website']} target="_blank" href={project.website}>{project.website}</a></td>
+                                        </tr>
+                                    }
                                 </tbody>
                             </table>
                         </div>

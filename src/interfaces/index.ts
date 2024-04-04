@@ -3,6 +3,7 @@ export interface ProjectProps {
     name: string,
     location: string,
     client?: string,
+    website?: string,
     imageUrl: string,
     skills: Array<string>,
     timeline: string,
