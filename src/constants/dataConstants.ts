@@ -85,7 +85,7 @@ export const projects = [
     },
     {
         id: 2,
-        name: 'Javascript Developer',
+        name: 'DOMO Connectors',
         imageUrl: project9,
         location: 'Upwork Freelance Contract at Stratorsoft',
         client: 'United States',
