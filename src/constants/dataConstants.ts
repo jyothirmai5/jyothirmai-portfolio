@@ -165,7 +165,7 @@ export const projects = [
         website: 'https://www.mindmaster.app/how-to-use-mind-master',
         location: 'AppIt Ventures',
         client: 'United States',
-        skills: ['React', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],
+        skills: ['Angular', 'TypeScript', 'Material-UI', 'CSS', 'HTML5'],
         description: `I contributed to the Mindmaster project by developing the admin portal using Angular and TypeScript. My responsibilities included creating a user-friendly interface for uploading audio affirmations, motivational text, and images. Despite the challenges, I successfully completed the project within a tight deadline of less than two months.
 
         This experience allowed me to sharpen my skills in Angular and TypeScript, as well as my ability to design intuitive user interfaces. Working on the Mindmaster project provided valuable insights into project management and the importance of meeting deadlines while delivering quality results.`
