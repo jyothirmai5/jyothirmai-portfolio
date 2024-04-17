@@ -23,10 +23,17 @@ const TechStack: FunctionComponent<TechStackProps> = () => {
                         <img src="https://skillicons.dev/icons?i=js,ts"></img>
                     </li>
                 </Tooltip>
-                <Tooltip title="React, Angular" TransitionComponent={Fade} placement="top"
+                <Tooltip title="React, Angular, NextJS" TransitionComponent={Fade} placement="top"
                     TransitionProps={{ timeout: 600 }} arrow>
                     <li>
-                        <img src="https://skillicons.dev/icons?i=react,angular"></img>
+                        <img src="https://skillicons.dev/icons?i=react,angular,nextjs"></img>
+                    </li>
+                </Tooltip>
+
+                <Tooltip title="Firebase, SQLite, Express" TransitionComponent={Fade} placement="top"
+                    TransitionProps={{ timeout: 600 }} arrow>
+                    <li>
+                        <img src="https://skillicons.dev/icons?i=firebase,sqlite,express"></img>
                     </li>
                 </Tooltip>
                 <Tooltip title="Figma, XD, Illustrator, Photoshop" TransitionComponent={Fade} placement="top"
