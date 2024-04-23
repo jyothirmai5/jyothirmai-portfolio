@@ -13,8 +13,8 @@ const MainPage: FunctionComponent<MainPageProps> = () => {
     return (
         <Layout>
             <Home />
-            <About />
             <Work />
+            <About />
             <Contact />
         </Layout>
     );

@@ -60,8 +60,8 @@ const Header: FunctionComponent<HeaderProps> = () => {
                     {isDesktopOrTablet ?
                         <nav>
                             <LinkButton onClick={() => scrollToSection(homeRef, 'home')} name="Home" selected={currentTab === 'home'} />
-                            <LinkButton onClick={() => scrollToSection(aboutRef, 'about')} name="About" selected={currentTab === 'about'} />
                             <LinkButton onClick={() => scrollToSection(projectsRef, 'projects')} name="Projects" selected={currentTab === 'projects'} />
+                            <LinkButton onClick={() => scrollToSection(aboutRef, 'about')} name="Soft Skills" selected={currentTab === 'about'} />
                             <LinkButton onClick={() => scrollToSection(contactRef, 'contact')} name="Contact" selected={currentTab === 'contact'} />
                         </nav> :
                         <HamBurger scrollToSection={scrollToSection} homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />

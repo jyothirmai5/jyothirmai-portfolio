@@ -26,7 +26,7 @@ const About: FunctionComponent<AboutProps> = () => {
 
     return (
         <div ref={aboutRef}>
-            <h2 className={styles['text-style-label']}>About Me</h2>
+            <h2 className={styles['text-style-label']}>Soft Skills</h2>
             <div className={styles['home-about_info-wrapper']}>
                 <div className={styles['home-about_line-wrapper']}>
                     <div className={styles['home-about_line-blue']}>

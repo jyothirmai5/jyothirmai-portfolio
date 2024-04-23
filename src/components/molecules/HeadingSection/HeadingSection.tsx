@@ -1,9 +1,7 @@
 import React from 'react'
 
 import profilePic from '../../../assets/profile-pic.png';
-import hiEmoji from '../../../assets/hi-emoji.png';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import styles from './HeadingSection.module.scss';
 import { Button, IconButton } from '@mui/material';
 import { useMediaQuery } from 'react-responsive';
@@ -26,10 +24,7 @@ const HeadingSection: React.FC<IHeadingProps> = ({
             <div className={styles.heroMain}>
                 <div className={styles.heroText}>
                     <span className={styles.title}>
-                        {title} &nbsp;
-                        <span>
-                            <img src={hiEmoji} height={50} />
-                        </span>
+                        {title}
                     </span>
                     <p className={styles['sub-title']}>
                         {subTitle} 📍
@@ -37,9 +32,6 @@ const HeadingSection: React.FC<IHeadingProps> = ({
                     <div className={styles.icons}>
                         <IconButton target='_blank' href='https://www.linkedin.com/in/jyothirmai-ch-837711161/'>
                             <LinkedInIcon className={styles['icon']} sx={{ color: 'white' }} />
-                        </IconButton>
-                        <IconButton target='_blank' href='https://github.com/jyothirmai5'>
-                            <GitHubIcon className={styles['icon']} sx={{ color: 'white' }} />
                         </IconButton>
                         <a target='_blank' href='resume.pdf' className={styles['a-link']}>
                             <Button className={styles['cv-btn']} variant="text">Download CV &nbsp;
