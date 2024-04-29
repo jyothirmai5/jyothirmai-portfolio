@@ -25,8 +25,8 @@ const Home: FunctionComponent<HomeProps> = () => {
 
     return (
         <div ref={homeRef}>
-            <HeadingSection title="Web Design & Developer"
-                subTitle="Hello, I'm Jyothirmai Ch, a web design and developer proficient in React, with over 5 years of hands-on experience in creating user-friendly websites that focus on both design and functionality. I am based in Toronto, Canada."
+            <HeadingSection title="Web Designer & Developer"
+                subTitle="Hello, I'm Jyothirmai Ch, a web designer and developer proficient in React, with over 5 years of hands-on experience in creating user-friendly websites that focus on both design and functionality. I am based in Toronto, Canada."
             />
             <TechStack />
         </div>
