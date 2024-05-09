@@ -147,6 +147,7 @@ export const projects = [
         name: 'Seven Bird Travel',
         imageUrl: project1,
         location: 'Humber College',
+        website: 'https://seven-bird-travel.vercel.app/',
         timeline: 'Feb 2024 - 2 Weeks',
         skills: ['Angular', 'TypeScript', 'Mapbox', 'Geolocation', 'POI', 'Bootstrap'],
         description: `Seven Bird Travel is a personal project I developed using Angular. This platform enables users to explore various travel destinations effortlessly. Leveraging the Mapbox API, users can search for destinations, accessing detailed location information seamlessly.
