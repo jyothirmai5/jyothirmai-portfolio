@@ -33,7 +33,7 @@ const HeadingSection: React.FC<IHeadingProps> = ({
                         <IconButton target='_blank' href='https://www.linkedin.com/in/jyothirmai-ch-837711161/'>
                             <LinkedInIcon className={styles['icon']} sx={{ color: 'white' }} />
                         </IconButton>
-                        <a target='_blank' href='resume.pdf' className={styles['a-link']}>
+                        <a target='_blank' href='jyothirmai-resume.pdf' className={styles['a-link']}>
                             <Button className={styles['cv-btn']} variant="text">Download CV &nbsp;
                                 <CloudDownloadIcon />
                             </Button>
